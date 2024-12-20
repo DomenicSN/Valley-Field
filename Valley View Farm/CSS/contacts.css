@@ -1,0 +1,79 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Container styling */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section Styling */
+.section {
+    padding: 40px 0;
+    background-color: #fff;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+/* Header section */
+header {
+    background-color: white;
+    color: black;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Contact list styling */
+.contact-list {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Row layout */
+    justify-content: left; /* Center the icons */
+    margin: 20px 0;
+    gap: 15px; /* Space between icons */
+}
+
+.contact-list li {
+    display: block;
+}
+
+/* Styling for icons */
+.contact-list a img {
+    width: 50px; /* Adjust the size of the icons */
+    height: 50px;
+    object-fit: contain; /* Ensures the icon is not distorted */
+    transition: transform 0.3s ease;
+}
+
+.contact-list a img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Location section */
+h3 {
+    font-size: 1.5em;
+    margin-top: 40px;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+}
+
+/* Footer styling */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valley View Farm</title>
+    <link rel="stylesheet" href="C:\Sheppered\Workspace\Web projects\Valley View Farm\CSS\index.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Valley View Farm</h1>
+            <!-- Hamburger menu button to open side drawer -->
+            <span class="open-btn" onclick="openDrawer()">&#9776; Menu</span>
+        </div>
+    </header>
+
+    <!-- Side Drawer -->
+    <div id="sideDrawer" class="side-drawer">
+        <button class="close-btn" onclick="closeDrawer()">&times;</button>
+        <nav>
+            <ul>
+                <li><a href="javascript:void(0);" onclick="loadPage('about.html')">About Us</a></li>
+                <li><a href="javascript:void(0);" onclick="loadPage('products.html')">Our Products</a></li>
+                <li><a href="javascript:void(0);" onclick="loadPage('contacts.html')">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Content Section -->
+    <section class="section">
+        <div class="container">
+            <h2>Welcome to Valley View Farm</h2>
+            <p>Your destination for high-quality agricultural products.</p>
+
+            <!-- Image added below the text -->
+            <img src="C:\Sheppered\Workspace\Web projects\Valley View Farm\icons\im.jpg" alt="Farm Image" class="farm-image">
+        </div>
+    </section>
+
+    <!-- Content that changes when a menu item is clicked -->
+    <div class="container">
+        <iframe id="contentIframe" src="" frameborder="0"></iframe>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Valley View Farm. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="C:\Sheppered\Workspace\Web projects\Valley View Farm\JavaScript\index.js"></script>
+</body>
+
+</html>

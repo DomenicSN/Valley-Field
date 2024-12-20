@@ -1,0 +1,158 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative; /* Added for positioning the menu icon */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.open-btn {
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    position: absolute; /* Positioning the menu icon */
+    top: 20px;
+    left: 20px; /* Move to the top-left corner */
+}
+
+/* Side Drawer styling */
+.side-drawer {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+
+.side-drawer a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-drawer a:hover {
+    color: #f1f1f1;
+}
+
+.side-drawer .close-btn {
+    font-size: 36px;
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    background: transparent;
+    border: none;
+}
+
+.side-drawer .close-btn:hover {
+    cursor: pointer;
+}
+
+/* Section styling */
+.section {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Image styling */
+.farm-image {
+    width: 100%;
+    max-width: 800px; /* Optional: set a max width for the image */
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px; /* Optional: rounded corners */
+}
+
+/* Footer styling */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Container styling */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* iframe styling */
+iframe {
+    width: 100%;
+    height: calc(100vh - 240px); /* Full height minus header and footer */
+    border: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .open-btn {
+        font-size: 20px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .side-drawer a {
+        font-size: 20px;
+    }
+
+    .section {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    iframe {
+        height: calc(100vh - 180px); /* Adjust iframe height for smaller screens */
+    }
+}
